@@ -10,9 +10,9 @@ allowed_extension = {
 
 file_name = input("Enter the name of the file: ")
 
-file_extension = file_name.lower().split(".")[-1] if "." in file_name else ""
+file_extension = file_name.lower().strip().split(".")[-1] if "." in file_name else ""
 
 
 media_type = allowed_extension.get("." + file_extension, "application/octet-stream")
 
-print(f"Media type for {file_name}: {media_type}")
+print(media_type)
