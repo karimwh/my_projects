@@ -5,11 +5,12 @@ def main():
 
 
 def convert_face(raw) :
-        raw = raw.replace(":)",'happy').replace(":(",'sad')
+        raw = raw.replace(":)", "🙂").replace(":(","🙁")
         return print(raw)
-    
+
+
+  
 
 main()
 
 
-# could not past in the emojis in vscode for somereason
