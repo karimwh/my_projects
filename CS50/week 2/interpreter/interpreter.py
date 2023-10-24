@@ -1,7 +1,24 @@
-expression = input ("Expression: ")
+def main():
+    user_input = input('Expression : ').strip()
 
-x , y , z = expression.split()
+    x , y , z = user_input.split(" ")
 
-x = int(x)
-z = int(y)
+    num_1 = float(x)
+    num_2 = float(z)
+
+    if y == "+":
+        result = num_1+num_2
+        print(f"your result is {result}")
+    elif y == "-":
+        result = num_1-num_2
+        print(f"your result is {result}")
+    elif y == "*":
+        result = num_1*num_2
+        print(f"your result is {result}")
+    elif y == "/":
+        result = num_1/num_2
+        print(f"your result is {result}")
+
+main()
+
 
